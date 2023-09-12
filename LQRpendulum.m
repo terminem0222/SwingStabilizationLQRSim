@@ -24,9 +24,17 @@ A = [0 1 0;
 % In our system's equation dx/dt = Ax + Bu, matrix B determines how the control inputs (u) influence the states.
 B = [0; -1; 1];
 
+
+
 % Cost matrices for the LQR controller.
-Q = diag([1.31629761, 0.10001671, 3.54819301]); % State cost matrix
-R = 9.58971006;                                % Control input cost matrix
+% 
+%
+% **************PASTE TUNER VALUES HERE*******************
+Q = diag([1.31629761, 0.10001671, 3.54819301]);
+R = 9.58971006;
+% ********************************************************
+
+
 
 % Ensure that the system is controllable with given A and B matrices.
 assertControllability(A, B);
