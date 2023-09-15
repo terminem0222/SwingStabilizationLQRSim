@@ -5,6 +5,7 @@ This is a matlab simulation of an inverted swinging pendulum with and without an
 Necessary add-ons:
 - Matlab Global Optimization Toolbox
 - Matlab Control System Toolbox
+- Matlab Mapping Toolbox
 
 
 To autotune:
